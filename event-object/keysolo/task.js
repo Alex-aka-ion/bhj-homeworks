@@ -17,13 +17,13 @@ class Game {
   }
 
   registerEvents() {
-    /*
-      TODO:
-      Написать обработчик события, который откликается
-      на каждый введённый символ.
-      В случае правильного ввода слова вызываем this.success()
-      При неправильном вводе символа - this.fail();
-     */
+      window.onkeypress = (e) => {
+          if (this.currentSymbol.textContent === e.key) {
+              this.success();
+          } else {
+              this.fail();
+          }
+      };
   }
 
   success() {
