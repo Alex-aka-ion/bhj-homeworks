@@ -17,9 +17,7 @@ const answers = [
 ]
 
 chatWidgetInput.addEventListener('keypress', (e) => {
-   if (e.key === 'Enter') {
-
-
+   if (e.key === 'Enter' && chatWidgetInput.value) {
        const currentTime = new Date();
        const timeString = currentTime.getHours() + ':' + currentTime.getMinutes();
 
