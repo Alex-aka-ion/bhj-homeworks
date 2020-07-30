@@ -24,6 +24,6 @@ form.addEventListener('submit', (e) => {
         console.log("error", this.status);
     });
 
-    xhr.open("POST", "upload", true);
+    xhr.open("POST", "https://netology-slow-rest.herokuapp.com/upload.php", true);
     xhr.send(file);
 })
